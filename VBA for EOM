@@ -1,0 +1,14 @@
+Sub Add30NamedSheets()
+'This copys the current sheet 30 times for EOM
+Dim x As Integer
+
+x = 1
+Do While x < 32
+    
+    ActiveSheet.Copy After:=Sheets(Sheets.Count)
+    ActiveSheet.Name = x
+    x = x + 1
+        
+Loop
+
+End Sub
